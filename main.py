@@ -32,6 +32,7 @@ for i in data.split("\n"):
     req=requests.get(target)
     if req.status_code==200:
         print(Fore.GREEN,"page found>>>>>>>>>>>",target,Style.RESET_ALL)
+        break
     else:
         print(Fore.RED, "page notfound>>>>>>>>>>>", target, Style.RESET_ALL)
 
